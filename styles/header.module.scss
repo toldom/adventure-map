@@ -1,0 +1,97 @@
+// Header styles
+
+@import "_variables.module.scss";
+
+.main {
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+
+    .bgImage {
+        background: url("/img/sunset.jpeg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        isolation: isolate;
+
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            opacity: .95;
+            inset: 0;
+            background: $primaryColor;
+        }
+    }
+
+    .navRow {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+
+        .tamLogo {
+            position: relative;
+            transition: .2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        input {
+            background-color: #2C6F94;
+            color: #FFF;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+            padding-left: 20px;
+
+            flex-grow: 1;
+
+            &::placeholder {
+                color: #e2e2e2;
+            }
+
+            &:hover, &:focus {
+                background-color: #407491;
+            }
+        }
+    
+        .navBar {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        
+            .navLink {
+                color: #FFF;
+                text-decoration: none;
+        
+                &:hover {
+                    color: rgb(140, 140, 255);
+                }
+            }
+        }
+    }
+
+    .titleRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    
+        h1 {
+            font-size: 2.5em;
+            color: #FFF;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 3em;
+            color: $secondaryColor;
+            margin: 0;
+        }
+    }
+
+}

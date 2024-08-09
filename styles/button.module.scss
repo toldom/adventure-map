@@ -1,0 +1,60 @@
+// Button styles
+
+@import "_variables.module.scss";
+
+@mixin Button($backgroundColor) {
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+    height: 3rem;
+    text-align: center;
+
+    flex-grow: 1;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    .buttonContents {
+        display: flex;
+        align-items: center;
+    }
+
+    .bgImage {
+        background-image: url("/img/pathway.jpeg");
+        background-size: 100% 100%;
+        background-position: center;
+        position: relative;
+        isolation: isolate;
+
+        border-radius: 12px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            opacity: .9;
+            inset: 0;
+            background: $backgroundColor;
+
+            border-radius: 12px;
+        }
+    }
+}
+
+.primary {
+    @include Button($primaryColor);
+}
+
+.secondary {
+    @include Button($secondaryColor);
+}
+
+.tertiary {
+    @include Button($tertiaryColour);
+    height: 5rem;
+}
+
+.glyph {
+    margin-right: 0px;
+}

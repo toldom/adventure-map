@@ -15,3 +15,25 @@
         @content;
     }
 }
+
+@mixin bgImage($backgroundColor, $img: "/img/pathway.jpeg", $opacity: .9) {
+
+    background-image: url($img);
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    isolation: isolate;
+
+    // border-radius: 12px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        opacity: $opacity;
+        inset: 0;
+        background: $backgroundColor;
+        border-radius: 12px;
+    }
+
+}

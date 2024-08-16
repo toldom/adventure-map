@@ -28,17 +28,15 @@ export default function Button(props: ButtonProps) {
     }
 
     return (
-        <Link href={link} className={style}>
-            <div className={button.bgImage}>
-                <button className={`${style} ${firaSans.className}`}>
-                    <div className={button.buttonContents}>
-                        {(glyph) && 
-                            <Image className={button.glyph} src={`/svg/${glyph}.svg`} alt="Tofino Adventure Map Logo" width="40" height="40" />
-                        }
-                        <p>{label}</p>
-                    </div>
-                </button>
-            </div>
+        <Link href={link}>
+            <button className={`${style} ${firaSans.className}`}>
+                <div className={button.buttonContents}>
+                    {(glyph) && 
+                        <Image className={button.glyph} src={`/svg/${glyph}.svg`} alt="Tofino Adventure Map Logo" width="40" height="40" />
+                    }
+                    <p>{label}</p>
+                </div>
+            </button>
         </Link>
     );
 }

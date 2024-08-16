@@ -1,0 +1,12 @@
+// Info card styles
+
+.main {
+    background-color: white;
+    border-radius: 12px;
+    padding: .5rem;
+    box-shadow: 0px 4px 4px rgba($color: #000000, $alpha: .25);
+
+    p {
+        white-space: pre-wrap;
+    }
+}

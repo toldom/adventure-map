@@ -1,0 +1,25 @@
+// Link card styles
+
+@import "_variables.module.scss";
+@import "_mixins.scss";
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem 4rem;
+
+    @include bgImage($primaryColor);
+    
+    background-color: $primaryColor;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+
+    span {
+        a {
+            color: $secondaryColor;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,28 +1,15 @@
 // Header styles
 
 @import "_variables.module.scss";
+@import "_mixins.scss";
+
 
 .main {
     background-color: $primaryColor;
     display: flex;
     flex-direction: column;
 
-    .bgImage {
-        background: url("/img/sunset.jpeg");
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        isolation: isolate;
-
-        &:after {
-            content: '';
-            position: absolute;
-            z-index: -1;
-            opacity: .95;
-            inset: 0;
-            background: $primaryColor;
-        }
-    }
+    @include bgImage($primaryColor, "/img/sunset.jpeg", .95);
 
     .navRow {
         padding: 1rem;

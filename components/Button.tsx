@@ -25,6 +25,8 @@ export default function Button(props: ButtonProps) {
         case "tertiary":
             style = button.tertiary;
             break;
+        case "quad":
+            style = button.quad;
     }
 
     return (

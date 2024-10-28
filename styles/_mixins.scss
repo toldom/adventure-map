@@ -37,3 +37,37 @@
     }
 
 }
+
+@mixin MinorButton($backgroundColour) {
+
+    color: #FFF;
+    background-color: $backgroundColour;
+    border: none;
+
+    max-width: 145px;
+    max-height: 40px;
+
+    min-width: 145px;
+    min-height: 40px;
+
+    border-radius: 12px;
+
+    margin: 5px;
+    
+    cursor: pointer;
+
+    p {
+        font-size: 17px;
+    }
+
+    .buttonContents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .glyph {
+        margin: 5px;
+    }
+
+}

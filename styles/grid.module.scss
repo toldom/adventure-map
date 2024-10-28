@@ -1,0 +1,17 @@
+// Grid styles
+
+@import "_variables.module.scss";
+@import "_mixins.scss";
+
+.gridContainer {
+    --column-count: 3;
+
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), 1fr);
+    column-gap: 1em;
+    row-gap: 1em;
+
+    @include mobile() {
+        --column-count: 1;
+    }
+}

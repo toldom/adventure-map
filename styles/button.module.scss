@@ -45,6 +45,51 @@
     height: 5rem;
 }
 
-.glyph {
-    margin-right: 0px;
+.quad {
+    @include Button($quadColor);
+    height: 5rem;
+}
+
+.directionsButton {
+    @include MinorButton(#366C7D);
+
+    &:hover {
+        background-color: #407f92;
+    }
+}
+
+.phoneCallButton {
+    @include MinorButton(#366C7D);
+
+    &:hover {
+        background-color: #407f92;
+    }
+}
+
+.instagramButton {
+    @include MinorButton(#833ab4);
+
+    background: #833ab4;
+    background: linear-gradient(
+        to right,
+        #833ab4,#fd1d1d,#fcb045
+    );
+
+    min-width: 0px;
+}
+
+.facebookButton {
+    @include MinorButton(#1877F2);
+
+    min-width: 0px;
+}
+
+.twitterButton {
+    @include MinorButton(#000000);
+
+    min-width: 0px;
+}
+
+.filterWhite {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(235deg) brightness(104%) contrast(101%);
 }

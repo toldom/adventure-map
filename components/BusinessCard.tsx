@@ -3,22 +3,25 @@ import Image from "next/image";
 import businessCard from "@/styles/businesscard.module.scss";
 import { IBusinessCardProps } from "@/data/types";
 import { firaSans, firaSansSm } from "@/styles/fonts";
+import { BusinessCategories } from "@/data/businessData";
 
 export default function BusinessCard(props: IBusinessCardProps) {
 
     const business = props.business;
+    const categoryData = BusinessCategories[business.category]
+
 
     return (
         <div className={businessCard.cardBody}>
             
             <div>
-                <Image style={{backgroundColor:"#87B9C4", borderRadius:"14"}} src={business.logo} height={"180"} width={"180"} alt={"Logo for " + business.name} />
+                <Image style={{backgroundColor:"#87B9C4", borderRadius:14}} src={business.logo} height={"180"} width={"180"} alt={"Logo for " + business.name} />
             </div>
 
             <div className={businessCard.innerContainer}>
                 <div>
-                    <div className={businessCard.tag} style={{backgroundColor: business.category.color}}>
-                        <p className={firaSansSm.className}>{business.category.name}</p>
+                    <div className={businessCard.tag} style={{backgroundColor: categoryData.color}}>
+                        <p className={firaSansSm.className}>{categoryData.name}</p>
                     </div>
                     <h1 className={firaSans.className}>{business.name}</h1>
                     <p className={firaSansSm.className}><em>{business.description}</em></p>

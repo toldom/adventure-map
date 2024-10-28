@@ -10,7 +10,6 @@ import { BusinessCategories } from "@/data/businessData";
 import { firaSans, firaSansSm } from "@/styles/fonts";
 
 interface IFiltersPorps {
-    // handleFilterButtonClick: MouseEventHandler
     activeFilter: string,
     setActiveFilter: React.Dispatch<React.SetStateAction<string>>
 }

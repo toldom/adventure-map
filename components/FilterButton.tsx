@@ -1,7 +1,6 @@
 // Filter button component
 'use client';
 
-import { MouseEventHandler } from "react";
 import Image from "next/image";
 import styles from "@/styles/directoryPage.module.scss";
 import { firaSans, firaSansSm } from "@/styles/fonts";
@@ -9,7 +8,7 @@ import { firaSans, firaSansSm } from "@/styles/fonts";
 
 interface IFilterButtonProps {
     label: string,
-    filterType?: string,
+    filterType: string,
     activeFilter: string,
     setActiveFilter: React.Dispatch<React.SetStateAction<string>>
 }
@@ -17,15 +16,15 @@ interface IFilterButtonProps {
 export default function FilterButton({ label, filterType, activeFilter, setActiveFilter }: IFilterButtonProps) {
 
     function handleFilterButtonClick() {
-        if (filterType + "-filter" !== activeFilter) {
-            setActiveFilter(filterType + "-filter")
+        if (filterType !== activeFilter) {
+            setActiveFilter(filterType);
         }
     }
 
     // Logic to handle displaying the active filter
     let buttonClassNames = `${styles["buttonObscureLayer"]}`
 
-    if (activeFilter === filterType + "-filter") {
+    if (activeFilter === filterType) {
         buttonClassNames += "activeFilterButton";
     }
 

@@ -1,26 +1,30 @@
 'use client';
 
-import React, { act } from "react";
-import styles from "@/app/page.module.scss";
+import { useState } from "react";
 import directoryPage from "@/styles/directoryPage.module.scss";
-import Image from "next/image";
 import Header from "@/components/Header";
 import BusinessCard from "@/components/BusinessCard";
 import Filters from "@/components/Filters";
-import { BusinessCategories,  BusinessData } from "@/data/businessData";
-// import { firaSans, firaSansSm } from "@/styles/fonts";
+import { BusinessData } from "@/data/businessData";
 
 export default function Directory() {
-
-	const [activeFilter, setActiveFilter] = React.useState("default-filter");
 	
-	const businessCards: any = [];
+	const defaultFilter = "default"
+	const [activeFilter, setActiveFilter] = useState(defaultFilter);
+	const defaultFilterActive = activeFilter == defaultFilter;
+
+	const businessCards: JSX.Element[] = [];
 
 	BusinessData.forEach(business => {
 
-		businessCards.push(
-			<BusinessCard business={business} key={business.name} />
-		);
+		const categoryMatchesActiveFilter 	= business.category === activeFilter;
+		const showBusiness 					= defaultFilterActive || categoryMatchesActiveFilter;
+
+		if (showBusiness) {
+			businessCards.push(
+				<BusinessCard business={business} key={business.name} />
+			);
+		}
 	});
 
 	return (

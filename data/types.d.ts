@@ -16,9 +16,9 @@ export interface IPageData {
 export interface IBeachData {
     title: string,
     description: string,
-    cardContent: ICardData [],
-    nearbyBusinessKeys: string [],
-    photoURLs: string [],
+    cardContent: ICardData[],
+    nearbyBusinessKeys: string[],
+    photoURLs: string[],
 }
 
 export interface IBusinessCategories {
@@ -33,7 +33,7 @@ export interface IBusinessListing {
     name: string,
     description: string,
     logo: string,
-    category: IBusinessCategory,
+    category: string,
     address?: string,
     website?: string,
     phone?: string,

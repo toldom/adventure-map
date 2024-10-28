@@ -8,7 +8,7 @@ import { trailData } from "@/data/trailData";
 
 // Import the list of paths
 const paths = Object.entries(trailData);
-const pathElements = [];
+const pathElements: JSX.Element[] = [];
 
 paths.forEach(([key, path]) => {
 	pathElements.push(

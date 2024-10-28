@@ -35,7 +35,7 @@ export default function Home() {
 							<p className={firaSansSm.className}>Learn everything you need to know about surfing in Tofino. From high tides to low tides and rip currents, this info will help you have fun and say safe.</p>
 						</div>
 						<div className={styles.infoCard}>
-							<Button label="How to drive Hwy 4" type="tertiary" link="/faq/how-to-drive-hwy4" glyph="HwyIcon" />
+							<Button label="How to drive Hwy 4" type="tertiary" link="/faq/how-to-drive-hwy-4" glyph="HwyIcon" />
 							<p className={firaSansSm.className}>Learn everything you need to know about surfing in Tofino. From high tides to low tides and rip currents, this info will help you have fun and say safe.</p>
 						</div>
 					</div>

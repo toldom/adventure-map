@@ -84,60 +84,6 @@ export const surfData : IPageData = {
 			"/img/surf-placeholder.jpg"
 		],
 	},
-	"hell-yeaaaaaaaa-dude-beach": {
-		title: "Hell Yeaaaaaaaa Dude Beach",
-        description: "Learn everything you need to know about surfing in Tofino. From high tides to low tides and rip currents, this info will help you have fun and say safe.",
-		cardContent: [
-			{
-				title: "General Surf Info",
-				content: "Lorem ipsum dolor sit amet consectetur. Sit viverra nam enim etiam. Vitae vulputate turpis ac velit. Vitae commodo ultricies duis donec cursus aliquet nam velit. Tristique facilisis aliquam commodo tempus accumsan. Ac suscipit vitae laoreet posuere diam dignissim nulla. Vestibulum sed nunc pulvinar interdum orci est erat elit imperdiet. Justo duis arcu vitae sed lobortis lacus. Sit ut iaculis enim sit porttitor. Nunc morbi quis iaculis arcu. Interdum morbi suspendisse egestas in arcu dignissim diam. Auctor eget luctus ac ipsum ultricies."
-			},
-			{
-				title: "Winds",
-				content: "Lorem ipsum dolor sit amet consectetur. Sit viverra nam enim etiam. Vitae vulputate turpis ac velit. Vitae commodo ultricies duis donec cursus aliquet nam velit. Tristique facilisis aliquam commodo tempus accumsan. Ac suscipit vitae laoreet posuere diam dignissim nulla. Vestibulum sed nunc pulvinar interdum orci est erat elit imperdiet. Justo duis arcu vitae sed lobortis lacus. Sit ut iaculis enim sit porttitor. Nunc morbi quis iaculis arcu. Interdum morbi suspendisse egestas in arcu dignissim diam. Auctor eget luctus ac ipsum ultricies."
-			},
-			{
-				title: "Currents",
-				content:"Lorem ipsum dolor sit amet consectetur. Sit viverra nam enim etiam. Vitae vulputate turpis ac velit. Vitae commodo ultricies duis donec cursus aliquet nam velit. Tristique facilisis aliquam commodo tempus accumsan. Ac suscipit vitae laoreet posuere diam dignissim nulla. Vestibulum sed nunc pulvinar interdum orci est erat elit imperdiet. Justo duis arcu vitae sed lobortis lacus. Sit ut iaculis enim sit porttitor. Nunc morbi quis iaculis arcu. Interdum morbi suspendisse egestas in arcu dignissim diam. Auctor eget luctus ac ipsum ultricies."
-			},
-			{
-				title: "Wave Style",
-				content: "Lorem ipsum dolor sit amet consectetur. Sit viverra nam enim etiam. Vitae vulputate turpis ac velit. Vitae commodo ultricies duis donec cursus aliquet nam velit. Tristique facilisis aliquam commodo tempus accumsan. Ac suscipit vitae laoreet posuere diam dignissim nulla. Vestibulum sed nunc pulvinar interdum orci est erat elit imperdiet. Justo duis arcu vitae sed lobortis lacus. Sit ut iaculis enim sit porttitor. Nunc morbi quis iaculis arcu. Interdum morbi suspendisse egestas in arcu dignissim diam. Auctor eget luctus ac ipsum ultricies."
-			},
-		],
-        
-		nearbyBusinessKeys: [],
-		photoURLs: [
-			"/img/surf-placeholder.jpg"
-		],
-	},
-    "jay-san-beach": {
-		title: "JaySan Beach",
-        description: "Learn everything you need to know about surfing in Tofino. From high tides to low tides and rip currents, this info will help you have fun and say safe.",
-		cardContent: [
-			{
-				title: "General Surf Info",
-				content: "Lorem ipsum dolor sit amet consectetur. Sit viverra nam enim etiam. Vitae vulputate turpis ac velit. Vitae commodo ultricies duis donec cursus aliquet nam velit. Tristique facilisis aliquam commodo tempus accumsan. Ac suscipit vitae laoreet posuere diam dignissim nulla. Vestibulum sed nunc pulvinar interdum orci est erat elit imperdiet. Justo duis arcu vitae sed lobortis lacus. Sit ut iaculis enim sit porttitor. Nunc morbi quis iaculis arcu. Interdum morbi suspendisse egestas in arcu dignissim diam. Auctor eget luctus ac ipsum ultricies."
-			},
-			{
-				title: "Winds",
-				content: "Lorem ipsum dolor sit amet consectetur. Sit viverra nam enim etiam. Vitae vulputate turpis ac velit. Vitae commodo ultricies duis donec cursus aliquet nam velit. Tristique facilisis aliquam commodo tempus accumsan. Ac suscipit vitae laoreet posuere diam dignissim nulla. Vestibulum sed nunc pulvinar interdum orci est erat elit imperdiet. Justo duis arcu vitae sed lobortis lacus. Sit ut iaculis enim sit porttitor. Nunc morbi quis iaculis arcu. Interdum morbi suspendisse egestas in arcu dignissim diam. Auctor eget luctus ac ipsum ultricies."
-			},
-			{
-				title: "Currents",
-				content:"Lorem ipsum dolor sit amet consectetur. Sit viverra nam enim etiam. Vitae vulputate turpis ac velit. Vitae commodo ultricies duis donec cursus aliquet nam velit. Tristique facilisis aliquam commodo tempus accumsan. Ac suscipit vitae laoreet posuere diam dignissim nulla. Vestibulum sed nunc pulvinar interdum orci est erat elit imperdiet. Justo duis arcu vitae sed lobortis lacus. Sit ut iaculis enim sit porttitor. Nunc morbi quis iaculis arcu. Interdum morbi suspendisse egestas in arcu dignissim diam. Auctor eget luctus ac ipsum ultricies."
-			},
-			{
-				title: "Wave Style",
-				content: "Lorem ipsum dolor sit amet consectetur. Sit viverra nam enim etiam. Vitae vulputate turpis ac velit. Vitae commodo ultricies duis donec cursus aliquet nam velit. Tristique facilisis aliquam commodo tempus accumsan. Ac suscipit vitae laoreet posuere diam dignissim nulla. Vestibulum sed nunc pulvinar interdum orci est erat elit imperdiet. Justo duis arcu vitae sed lobortis lacus. Sit ut iaculis enim sit porttitor. Nunc morbi quis iaculis arcu. Interdum morbi suspendisse egestas in arcu dignissim diam. Auctor eget luctus ac ipsum ultricies."
-			},
-		],
-        
-		nearbyBusinessKeys: [],
-		photoURLs: [
-			"/img/surf-placeholder.jpg"
-		],
-	},
 	"newly-discovered-beach": {
 		title: "Newly Discovered Beach",
         description: "Learn everything you need to know about surfing in Tofino. From high tides to low tides and rip currents, this info will help you have fun and say safe.",

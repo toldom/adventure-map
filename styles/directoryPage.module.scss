@@ -9,6 +9,22 @@
     grid-template-columns: 20% 80%;
     gap: 20px;
 
+    @include tablet() {
+        padding: 2rem 4rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include mobile() {
+        
+        padding: 2rem 2rem;
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+
 }
 
 .filteringSection {

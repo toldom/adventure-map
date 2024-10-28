@@ -8,8 +8,8 @@ import { faqData } from "@/data/faqData";
 
 // Compose the 
 const faqTips = Object.entries(faqData);
-const tipLinkElements = [];
-const tipCardElements = [];
+const tipLinkElements: JSX.Element[]  = [];
+const tipCardElements: JSX.Element[] = [];
 
 faqTips.forEach(([key, tip]) => {
 	tipLinkElements.push(

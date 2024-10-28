@@ -8,7 +8,7 @@ import { surfData } from "@/data/surfData";
 
 // Import the list of beaches
 const beaches = Object.entries(surfData);
-const beachElements = [];
+const beachElements: JSX.Element[] = [];
 
 beaches.forEach(([key, beach]) => {
 	beachElements.push(

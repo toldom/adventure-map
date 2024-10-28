@@ -79,31 +79,5 @@ export const trailData : IPageData = {
             "/img/hiking_placeholder.jpg"
         ],
 	},
-    "freaky-forest": {
-		title: "Freaky Forest",
-        description: "Learn everything you need to know about Hiking in Tofino. From high tides to low tides and rip currents, this info will help you have fun and say safe.",
-		cardContent: [
-			{
-				title: "General Path Info",
-				content: "Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful. Hiking at Freaky Forest is wonderful."
-			},
-			{
-				title: "Best Weather Conditions",
-				content: "Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds. Freaky Forest has blowing winds."
-			},
-			{
-				title: "Hiking Gear",
-				content:"The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing. The currents on Freaky Forest are flowing."
-			},
-			{
-				title: "Clothing",
-				content: "The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey. The waves at Freaky Forest are wavey."
-			},
-		],
-		nearbyBusinessKeys: [],
-		photoURLs: [
-            "/img/hiking_placeholder.jpg"
-        ],
-	},
 	
 };

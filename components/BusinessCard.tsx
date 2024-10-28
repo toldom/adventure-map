@@ -24,7 +24,9 @@ export default function BusinessCard(props: IBusinessCardProps) {
                         <p className={firaSansSm.className}>{categoryData.name}</p>
                     </div>
                     <h1 className={firaSans.className}>{business.name}</h1>
-                    <p className={firaSansSm.className}><em>{business.description}</em></p>
+                    {(business.description !== undefined) &&
+                        <p className={firaSansSm.className}><em>{business.description}</em></p>
+                    }
                 </div>
 
                 {(  business.website !== undefined ||

@@ -78,7 +78,6 @@ export const BusinessData: IBusinessListing[] = [
     },
     {
         name: "Mackenzie Beach Resort",
-        description: "",
         logo: "/svg/logos/4_MackenzieBeach.svg",
         category: BusinessCategoryKeys.accomodations,
         address: "1101 Pacific Rim Hwy, Tofino, BC, Canada",
@@ -88,7 +87,6 @@ export const BusinessData: IBusinessListing[] = [
     },
     {
         name: "Pacific Sands Beach Resort",
-        description: "",
         logo: "/svg/logos/6_pacificsands.svg",
         category: BusinessCategoryKeys.accomodations,
         address: "1421 Pacific Rim Hwy, Tofino, BC, Canada",
@@ -152,68 +150,38 @@ export const BusinessData: IBusinessListing[] = [
     },
     {
         name: "Africa BnB",
-        description: "",
         logo: "/svg/logos/PlaceholderLogo.svg",
         category: BusinessCategoryKeys.accomodations,
-        address: "",
-        website: "",
-        phone: "",
-        email: "",
         tier: 3
     },
     {
         name: "Tofino Motel",
-        description: "",
         logo: "/svg/logos/PlaceholderLogo.svg",
         category: BusinessCategoryKeys.accomodations,
-        address: "",
-        website: "",
-        phone: "",
-        email: "",
         tier: 3
     },
     {
         name: "Middle Beach Lodge",
-        description: "",
         logo: "/svg/logos/PlaceholderLogo.svg",
         category: BusinessCategoryKeys.accomodations,
-        address: "",
-        website: "",
-        phone: "",
-        email: "",
         tier: 3
     },
     {
         name: "Bella Pacifica",
-        description: "",
         logo: "/svg/logos/PlaceholderLogo.svg",
         category: BusinessCategoryKeys.accomodations,
-        address: "",
-        website: "",
-        phone: "",
-        email: "",
         tier: 3
     },
     {
         name: "Cox Bay Beach Resort",
-        description: "",
         logo: "/svg/logos/PlaceholderLogo.svg",
         category: BusinessCategoryKeys.accomodations,
-        address: "",
-        website: "",
-        phone: "",
-        email: "",
         tier: 3
     },
     {
         name: "Long Beach Lodge Resort",
-        description: "",
         logo: "/svg/logos/PlaceholderLogo.svg",
         category: BusinessCategoryKeys.accomodations,
-        address: "",
-        website: "",
-        phone: "",
-        email: "",
         tier: 3
     },
     // Food & Beverage
@@ -252,7 +220,6 @@ export const BusinessData: IBusinessListing[] = [
     },
     {
         name: "Driftwood Cafe at Wickaninnish Inn",
-        description: "",
         logo: "/svg/logos/15_driftwood_cafe.svg",
         category: BusinessCategoryKeys.fnb,
         address: "500 Osprey Lane, Tofino, BC, Canada",
@@ -369,7 +336,6 @@ export const BusinessData: IBusinessListing[] = [
     },
     {
         name: "Tacofino",
-        description: "",
         logo: "/svg/logos/30_tacofino.svg",
         category: BusinessCategoryKeys.fnb,
         address: "1184 Pacific Rim Hwy., Tofino, BC, Canada",
@@ -390,7 +356,6 @@ export const BusinessData: IBusinessListing[] = [
     },
     {
         name: "Tofino Brewing Company",
-        description: "",
         logo: "/svg/logos/34_tofino_brewery.svg",
         category: BusinessCategoryKeys.fnb,
         address: "681 Industrial Way, Tofino, BC, Canada",
@@ -514,7 +479,6 @@ export const BusinessData: IBusinessListing[] = [
     },
     {
         name: "Surf Sister",
-        description: "",
         logo: "/svg/logos/47_surfsister.svg",
         category: BusinessCategoryKeys.surf,
         address: "625 Campbell St., Tofino, BC, Canada",
@@ -545,7 +509,6 @@ export const BusinessData: IBusinessListing[] = [
     // Wellness
     {
         name: "Ancient Cedar Spa at Wickaninnish Inn",
-        description: "",
         logo: "/svg/logos/51_ancient_cedar_spa.svg",
         category: BusinessCategoryKeys.wellness,
         address: "500 Osprey Lane, Tofino, BC, Canada",
@@ -665,7 +628,6 @@ export const BusinessData: IBusinessListing[] = [
     },
     {
         name: "Pharmasave",
-        description: "",
         logo: "/svg/logos/62_pharmasave.svg",
         category: BusinessCategoryKeys.retail,
         address: "131 1st St., Tofino, BC, Canada",
@@ -720,7 +682,6 @@ export const BusinessData: IBusinessListing[] = [
     // Activities
     {
         name: "Adventure Tofino Wildlife Tours",
-        description: "",
         logo: "/svg/logos/70_adventuretofino.svg",
         category: BusinessCategoryKeys.activities,
         address: "421 Main St, Tofino, BC V0R 2Z0, Canada",

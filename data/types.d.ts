@@ -31,7 +31,7 @@ export interface IBusinessCategories {
 
 export interface IBusinessListing {
     name: string,
-    description: string,
+    description?: string,
     logo: string,
     category: string,
     address?: string,

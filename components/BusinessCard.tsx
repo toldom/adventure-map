@@ -35,7 +35,7 @@ export default function BusinessCard(props: IBusinessCardProps) {
                     business.instagram !== undefined || 
                     business.twitter !== undefined
                 ) && 
-                    <div style={{paddingTop: 20}}>
+                    <div className={businessCard.buttonContainer} style={{paddingTop: 20}}>
                         {(business.website !== undefined) &&
                             <a href={business.website} rel="noreferrer" target="_blank">
                                 <button className={`${businessCard.websiteButton} ${firaSans.className}`}>

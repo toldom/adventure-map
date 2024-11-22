@@ -27,8 +27,16 @@
 
 }
 
-.filteringSection {
-    // display: flex;
+.desktopFilters {
+    display: block;
+
+    @include tablet() {
+        display: none;
+    }
+
+    @include mobile() {
+        display: none;
+    }
 }
 
 .filterButton {
@@ -48,14 +56,26 @@
     }
 }
 
-.buttonContents {
-
-}
-
 .activeFilterButton {
     opacity: 1 !important;
 }
 
-.contentSection {
+.mobileFiltersSelect {
 
+    @include MinorButton($primaryColor);
+
+    max-width: none;
+    width: 100%;
+
+    padding: 10px;
+
+    display: none;
+
+    @include tablet() {
+        display: block;
+    }
+
+    @include mobile() {
+        display: block;
+    }
 }

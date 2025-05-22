@@ -1,4 +1,4 @@
-import { IPageData } from "./types";
+import { IPageData } from "../types";
 
 export const surfData : IPageData = {
 	"tonquin-beach": {

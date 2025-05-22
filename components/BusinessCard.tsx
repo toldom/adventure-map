@@ -3,7 +3,9 @@ import Image from "next/image";
 import businessCard from "@/styles/businesscard.module.scss";
 import { IBusinessCardProps } from "@/data/types";
 import { firaSans, firaSansSm } from "@/styles/fonts";
-import { BusinessCategories } from "@/data/businessData";
+import { config } from "@/data/config";
+
+const BusinessCategories = config.businessCategories;
 
 export default function BusinessCard(props: IBusinessCardProps) {
 

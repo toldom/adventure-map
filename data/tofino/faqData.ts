@@ -1,4 +1,4 @@
-import { IPageData } from "./types";
+import { IPageData } from "../types";
 
 export const faqData : IPageData = {
     "how-to-drive-hwy-4": {

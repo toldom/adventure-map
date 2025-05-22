@@ -4,9 +4,11 @@
 import React, { act, MouseEventHandler, useState } from "react";
 import Image from "next/image";
 import FilterButton from "./FilterButton";
-import { BusinessCategories } from "@/data/businessData";
 import directoryPage from "@/styles/directoryPage.module.scss";
 import { firaSans, firaSansSm } from "@/styles/fonts";
+import { config } from "@/data/config";
+
+const BusinessCategories = config.businessCategories;
 
 interface IFiltersPorps {
     activeFilter: string,

@@ -3,7 +3,9 @@ import Image from "next/image";
 import Header from "@/components/Header";
 import LinkCard from "@/components/LinkCard";
 import InfoCard from "@/components/InfoCard";
-import { trailData } from "@/data/trailData";
+import { config } from "@/data/config";
+
+const trailData = config.trailData;
 
 export default function PathDetails({ params }: { params: { pathKey: string } }) {
 

@@ -4,7 +4,9 @@ import Header from "@/components/Header";
 import InfoCard from "@/components/InfoCard";
 import LinkCard from "@/components/LinkCard";
 import Button from "@/components/Button";
-import { surfData } from "@/data/surfData";
+import { config } from "@/data/config";
+
+const surfData = config.surfData;
 
 // Import the list of beaches
 const beaches = Object.entries(surfData);

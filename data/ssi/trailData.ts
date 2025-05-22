@@ -1,9 +1,9 @@
-import { IPageData } from "./types";
+import { IPageData } from "@/data/types";
 
 export const trailData : IPageData = {
 	"radar-hill": {
 		title: "Radar Hill",
-        description: "Learn everything you need to know about Hiking in Tofino. From high tides to low tides and rip currents, this info will help you have fun and say safe.",
+        description: "Learn everything you need to know about Hiking in Salt Spring Island. From high tides to low tides and rip currents, this info will help you have fun and say safe.",
 		cardContent: [
 			{
 				title: "General Path Info",
@@ -29,7 +29,7 @@ export const trailData : IPageData = {
 	},
     "schooner-cove": {
 		title: "Schooner Cove",
-        description: "Learn everything you need to know about Hiking in Tofino. From high tides to low tides and rip currents, this info will help you have fun and say safe.",
+        description: "Learn everything you need to know about Hiking in Salt Spring Island. From high tides to low tides and rip currents, this info will help you have fun and say safe.",
 		cardContent: [
 			{
 				title: "General Path Info",
@@ -55,7 +55,7 @@ export const trailData : IPageData = {
 	},
     "mollys-mountain": {
 		title: "Mollys Mountain",
-        description: "Learn everything you need to know about Hiking in Tofino. From high tides to low tides and rip currents, this info will help you have fun and say safe.",
+        description: "Learn everything you need to know about Hiking in Salt Spring Island. From high tides to low tides and rip currents, this info will help you have fun and say safe.",
 		cardContent: [
 			{
 				title: "General Path Info",

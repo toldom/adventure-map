@@ -4,9 +4,10 @@ import Button from "@/components/Button";
 import Header from "@/components/Header";
 import InfoCard from "@/components/InfoCard";
 import LinkCard from "@/components/LinkCard";
-import { trailData } from "@/data/trailData";
+import { config } from "@/data/config";
 
 // Import the list of paths
+const trailData = config.trailData;
 const paths = Object.entries(trailData);
 const pathElements: JSX.Element[] = [];
 

@@ -5,7 +5,10 @@ import directoryPage from "@/styles/directoryPage.module.scss";
 import Header from "@/components/Header";
 import BusinessCard from "@/components/BusinessCard";
 import Filters from "@/components/Filters";
-import { BusinessData } from "@/data/businessData";
+
+import { config } from "@/data/config";
+
+const BusinessData = config.businessData;
 
 export default function Directory() {
 	

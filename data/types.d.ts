@@ -43,3 +43,20 @@ export interface IBusinessListing {
     twitter?: string,
     tier: number
 }
+
+export interface IEnvMetadata {
+    name: string,
+    logo: string,
+    includeSurf: boolean,
+    includeTrails: boolean,
+    includeFAQ: boolean,
+}
+
+export interface IConfig {
+    envMetadata: IEnvMetadata,
+    businessData: IBusinessListing[],
+    businessCategories: IBusinessCategories,
+    faqData: IPageData,
+    trailData: IPageData,
+    surfData: IPageData,
+}

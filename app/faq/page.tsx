@@ -4,7 +4,9 @@ import Button from "@/components/Button";
 import Header from "@/components/Header";
 import LinkCard from "@/components/LinkCard";
 import InfoCard from "@/components/InfoCard";
-import { faqData } from "@/data/faqData";
+import { config } from "@/data/config";
+
+const faqData = config.faqData;
 
 // Compose the 
 const faqTips = Object.entries(faqData);

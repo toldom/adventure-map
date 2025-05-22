@@ -2,7 +2,9 @@ import styles from "@/app/page.module.scss";
 import Header from "@/components/Header";
 import InfoCard from "@/components/InfoCard";
 import LinkCard from "@/components/LinkCard";
-import { faqData } from "@/data/faqData";
+import { config } from "@/data/config";
+
+const faqData = config.faqData;
 
 export default function TourismTipDetails({ params }: { params: { faqKey: string } }) {
 	

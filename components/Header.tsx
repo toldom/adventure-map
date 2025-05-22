@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import header from "@/styles/header.module.scss";
+import { config } from "@/data/config";
 
 import { firaSans, firaSansSm, dancingScript } from "@/styles/fonts";
 
@@ -12,6 +13,8 @@ interface HeaderProps {
     hasSearch?: boolean
 }
 
+const envMetadata = config.envMetadata;
+
 export default function Header(props: HeaderProps) {
 
     const { mainLine, subLine, hasSearch = false } = props;
@@ -20,13 +23,13 @@ export default function Header(props: HeaderProps) {
         <div className={ header.main }>
             <div className={ header.navRow } >
                 <Link href={"/"}>
-                    <Image src="/svg/TAM-logo.svg" className={ header.tamLogo } alt="Tofino Adventure Map Logo" width="60" height="88" />
+                    <Image src={envMetadata.logo} className={ header.tamLogo } alt="Tofino Adventure Map Logo" width="60" height="88" />
                 </Link>
                 { (hasSearch) && 
                     <input className={ firaSansSm.className } type="text" placeholder="Search by business or keyword" />
                 }
                 <div className={ header.navBar }>
-                    <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/town-map"} >TOFINO MAP</Link>
+                    <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/town-map"} >{ envMetadata.name.toUpperCase() } MAP</Link>
                     <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/parks-map"} >PARKS MAP</Link>
                     <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/directory"} >BUSINESS DIRECTORY</Link>
                     <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/faq"} >FAQ</Link>

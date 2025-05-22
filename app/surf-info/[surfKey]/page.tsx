@@ -4,7 +4,9 @@ import styles from "@/app/page.module.scss";
 import Header from "@/components/Header";
 import LinkCard from "@/components/LinkCard";
 import InfoCard from "@/components/InfoCard";
-import { surfData } from "@/data/surfData";
+import { config } from "@/data/config";
+
+const surfData = config.surfData;
 
 export default function SurfDetails({ params }: { params: { surfKey: string } } ) {
 

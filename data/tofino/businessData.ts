@@ -3,7 +3,7 @@ import { IBusinessCategories, IBusinessListing } from "../types";
 export const BusinessCategoryKeys = {
     fnb: "fnb",
     wellness: "wellness",
-    accomodations: "accomodations",
+    accommodations: "accommodations",
     activities: "activities",
     surf: "surf",
     retail: "retail",
@@ -20,9 +20,9 @@ export const BusinessCategories: IBusinessCategories = {
         name: "Wellness",
         color: "#FA7B04"
     },
-    [BusinessCategoryKeys.accomodations]: {
-        key: "accomodations",
-        name: "Accomodations",
+    [BusinessCategoryKeys.accommodations]: {
+        key: "accommodations",
+        name: "Accommodations",
         color: "#EC1C24"
     },
     [BusinessCategoryKeys.activities]: {
@@ -43,12 +43,12 @@ export const BusinessCategories: IBusinessCategories = {
 }
 
 export const BusinessData: IBusinessListing[] = [
-    // Accomodations
+    // Accommodations
     {
         name: "Duffin Cove",
         description: "Ocean Front Lodging",
         logo: "/svg/logos/tofino/1_duffin_cove.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "215 Campbell St, Tofino, BC, Canada",
         website: "https://www.duffincove.com",
         phone: "+1(250)-725-3448",
@@ -59,7 +59,7 @@ export const BusinessData: IBusinessListing[] = [
         name: "Himwitsa Lodge",
         description: "First Nations Owned and Operated for over 25 years",
         logo: "/svg/logos/tofino/2_Himwitsa.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "300 Main St., Tofino, BC, Canada",
         website: "https://www.himwitsalodge.com",
         phone: "+1(250)725-2017",
@@ -70,7 +70,7 @@ export const BusinessData: IBusinessListing[] = [
         name: "Ocean Village Resort",
         description: "Beachfront cabins on MacKenzie Beach, indoor swimming pool & hot tub",
         logo: "/svg/logos/tofino/5_oceanvillage.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "555 Hellesen Dr., Tofino, BC, Canada",
         website: "https://www.oceanvillageresort.com",
         phone: "+1(250)725-3755",
@@ -79,7 +79,7 @@ export const BusinessData: IBusinessListing[] = [
     {
         name: "Mackenzie Beach Resort",
         logo: "/svg/logos/tofino/4_MackenzieBeach.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "1101 Pacific Rim Hwy, Tofino, BC, Canada",
         website: "https://www.duffincove.com",
         phone: "+1(250)725-3439",
@@ -88,7 +88,7 @@ export const BusinessData: IBusinessListing[] = [
     {
         name: "Pacific Sands Beach Resort",
         logo: "/svg/logos/tofino/6_pacificsands.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "1421 Pacific Rim Hwy, Tofino, BC, Canada",
         website: "https://www.pacificsands.com",
         phone: "+1(250)725-3322",
@@ -99,7 +99,7 @@ export const BusinessData: IBusinessListing[] = [
         name: "Stay Tofino",
         description: "We offer a diverse selection of Vacation Rentals. Check us out if you’re looking for that perfect rental while visiting Tofino",
         logo: "/svg/logos/tofino/7_staytofino.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "609 Pfeiffer Crescent, Tofino, BC V0R 2Z0, Canada",
         website: "https://www.staytofino.com",
         phone: "+17784002650",
@@ -110,7 +110,7 @@ export const BusinessData: IBusinessListing[] = [
         name: "Surf Grove Campground",
         description: "Semi - and fully serviced campsites accommodate: tents, vans, RVs, and everything in between. Open year-round for camping, all just a stone's throw away from Cox Bay",
         logo: "/svg/logos/tofino/8_surfgrove.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "1451 Pacific Rim Hwy, Tofino, BC, Canada",
         website: "https://www.surfgrove.com",
         phone: "+1(250)725-2750",
@@ -121,7 +121,7 @@ export const BusinessData: IBusinessListing[] = [
         name: "TOFINO RESORT + MARINA",
         description: "Inspired by Adventure. Floating Sauna, Remote Kayaking, Bear & Whale Watching, Guided Fishing Trips. Your launchpad for everything Tofino Adventure.",
         logo: "/svg/logos/tofino/9_Tofinomarinaresort.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "634 Campbell St, Tofino, BC V0R 2Z0, Canada",
         website: "http://tofinoresortandmarina.com/",
         phone: "+ 1(844)-680-4184",
@@ -131,7 +131,7 @@ export const BusinessData: IBusinessListing[] = [
         name: "West Coast Hideaway",
         description: "Tranquility in the rainforest next to Canada's greatest surf beach, come stay with us! Check us out on AirBnB and VRBO", // Should we include links out to the AirBNB / VRBO listings?
         logo: "/svg/logos/tofino/10_westcoast_hideaway.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "1392 Pacific Rim Hwy, Tofino, BC, Canada",
         website: "https://www.duffincove.com",
         phone: "+1(604)803-8002",
@@ -142,7 +142,7 @@ export const BusinessData: IBusinessListing[] = [
         name: "Whalers Guesthouse / Tofino Hostel Hostelling International",
         description: "Beautiful Ocean Views, Downtown Location & Affordable Rates",
         logo: "/svg/logos/tofino/11_whalersguesthouse.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         address: "81 West St., Tofino, BC, Canada",
         website: "https://www.tofinohostel.com",
         phone: "+1(250)725-3443",
@@ -151,37 +151,37 @@ export const BusinessData: IBusinessListing[] = [
     {
         name: "Africa BnB",
         logo: "/svg/logos/tofino/PlaceholderLogo.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         tier: 3
     },
     {
         name: "Tofino Motel",
         logo: "/svg/logos/tofino/PlaceholderLogo.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         tier: 3
     },
     {
         name: "Middle Beach Lodge",
         logo: "/svg/logos/tofino/PlaceholderLogo.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         tier: 3
     },
     {
         name: "Bella Pacifica",
         logo: "/svg/logos/tofino/PlaceholderLogo.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         tier: 3
     },
     {
         name: "Cox Bay Beach Resort",
         logo: "/svg/logos/tofino/PlaceholderLogo.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         tier: 3
     },
     {
         name: "Long Beach Lodge Resort",
         logo: "/svg/logos/tofino/PlaceholderLogo.svg",
-        category: BusinessCategoryKeys.accomodations,
+        category: BusinessCategoryKeys.accommodations,
         tier: 3
     },
     // Food & Beverage
@@ -824,7 +824,7 @@ export const BusinessData: IBusinessListing[] = [
     //     name: "Duffin Cove",
     //     description: "Ocean Front Lodging",
     //     logo: "/svg/logos/tofino/PlaceholderLogo.svg",
-    //     category: BusinessCategoryKeys.accomodations,
+    //     category: BusinessCategoryKeys.accommodations,
     //     address: "215 Campbell St, Tofino, BC, Canada",
     //     website: "https://www.duffincove.com",
     //     phone: "+1(250)-725-3448",

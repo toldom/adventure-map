@@ -41,7 +41,9 @@ export interface IBusinessListing {
     facebook?: string,
     instagram?: string,
     twitter?: string,
-    tier: number
+    tier: number,
+    mapSide?: string,
+    mapChunk?: string,
 }
 
 export interface IEnvMetadata {

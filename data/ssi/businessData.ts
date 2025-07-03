@@ -1051,7 +1051,7 @@ export const BusinessData: IBusinessListing[] = [
         mapSide: "Ganges",
     },
     {
-        name: "Hastings House",
+        name: "Manor Dining at Hastings House",
         description: "Gourmet Dining & Seaside Patio. Call for reservations.",
         logo: "/svg/logos/ssi/ganges/32_hastinghouse.svg",
         category: BusinessCategoryKeys.fnb,

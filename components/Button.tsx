@@ -27,6 +27,10 @@ export default function Button(props: ButtonProps) {
             break;
         case "quad":
             style = button.quad;
+            break;
+        case "mapLink":
+            style = button.mapLink;
+            break;
     }
 
     return (

@@ -4,7 +4,9 @@
 import Image from "next/image";
 import styles from "@/styles/directoryPage.module.scss";
 import { firaSans, firaSansSm } from "@/styles/fonts";
+import { config } from "@/data/config";
 
+const envMetadata = config.envMetadata;
 
 interface IFilterButtonProps {
     label: string,
@@ -29,7 +31,7 @@ export default function FilterButton({ label, filterType, activeFilter, setActiv
     }
 
     // Logic to handle if filter has an icon
-    let iconSource = (filterType !== "default") ? "/svg/filter-icons/filter-" + filterType + ".svg" : undefined;
+    let iconSource = (filterType !== "default") ? "/svg/filter-icons/" + envMetadata.envKey + "/filter-" + filterType + ".webp" : undefined;
 
     return (
         <div className={buttonClassNames} id={`${filterType}-filter`}>

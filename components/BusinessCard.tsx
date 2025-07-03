@@ -22,8 +22,17 @@ export default function BusinessCard(props: IBusinessCardProps) {
 
             <div className={businessCard.innerContainer}>
                 <div>
-                    <div className={businessCard.tag} style={{backgroundColor: categoryData.color}}>
-                        <p className={firaSansSm.className}>{categoryData.name}</p>
+                    {/* Display tags */}
+                    <div className={businessCard.tagContainer}> 
+                        {/* Add a tag indicating which map side this business is featured on */}
+                        {(business.mapSide !== undefined) &&
+                            <div className={businessCard.tag} style={{backgroundColor: "green"}}>
+                                <p className={firaSansSm.className}>{business.mapSide}</p>
+                            </div>
+                        }
+                        <div className={businessCard.tag} style={{backgroundColor: categoryData.color}}>
+                            <p className={firaSansSm.className}>{categoryData.name}</p>
+                        </div>
                     </div>
                     <h1 className={firaSans.className}>{business.name}</h1>
                     {(business.description !== undefined) &&

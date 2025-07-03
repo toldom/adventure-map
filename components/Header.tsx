@@ -23,14 +23,14 @@ export default function Header(props: HeaderProps) {
         <div className={ header.main }>
             <div className={ header.navRow } >
                 <Link href={"/"}>
-                    <Image src={envMetadata.logo} className={ header.tamLogo } alt="Tofino Adventure Map Logo" width="60" height="88" />
+                    <Image src={envMetadata.logo} className={ header.tamLogo } alt="Tofino Adventure Map Logo" width="90" height="132" />
                 </Link>
                 { (hasSearch) && 
                     <input className={ firaSansSm.className } type="text" placeholder="Search by business or keyword" />
                 }
                 <div className={ header.navBar }>
-                    <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/town-map"} >{ envMetadata.name.toUpperCase() } MAP</Link>
-                    <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/parks-map"} >PARKS MAP</Link>
+                    <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/town-map"} >{ envMetadata.mapSideAName.toUpperCase() } MAP</Link>
+                    <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/parks-map"} >{ envMetadata.mapSideBName.toUpperCase() } MAP</Link>
                     <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/directory"} >BUSINESS DIRECTORY</Link>
                     <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/faq"} >FAQ</Link>
                 </div>

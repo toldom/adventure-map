@@ -49,9 +49,14 @@ export interface IBusinessListing {
 export interface IEnvMetadata {
     name: string,
     logo: string,
+    envKey: string,
     includeSurf: boolean,
     includeTrails: boolean,
     includeFAQ: boolean,
+    mapSideAName: string,
+    mapSideBName: string,
+    mapSideADir: string,
+    mapSideBDir: string,
 }
 
 export interface IConfig {

@@ -40,6 +40,11 @@
     @include Button($secondaryColor);
 }
 
+.mapLink {
+    @include Button($secondaryColor);
+    height: 150px;
+}
+
 .tertiary {
     @include Button($tertiaryColour);
     height: 5rem;

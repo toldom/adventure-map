@@ -18,8 +18,8 @@ export default function Home() {
 				<div className={ styles.mainSection }>
 					<Button type="primary" label={"VIEW ALL " + envMetadata.name.toUpperCase()  + " BUSINESSES"} link="/directory" />
 					<div className={styles.btnContainer}>
-						<Button type="secondary" label={"VIEW " + envMetadata.name.toUpperCase() + " MAP"} link="/town-map" />
-						<Button type="secondary" label={"VIEW " + envMetadata.name.toUpperCase() + " PARKS MAP"} link="parks-map" />
+						<Button type="mapLink" label={"VIEW " + envMetadata.mapSideAName.toUpperCase() + " MAP"} link="/town-map" />
+						<Button type="mapLink" label={"VIEW " + envMetadata.mapSideBName.toUpperCase() + " MAP"} link="/parks-map" />
 					</div>
 				</div>
 

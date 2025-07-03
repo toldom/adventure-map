@@ -34,7 +34,7 @@ export default function Button(props: ButtonProps) {
     }
 
     return (
-        <Link href={link}>
+        <Link style={{flex: 1}} href={link}>
             <button className={`${style} ${firaSans.className}`}>
                 <div className={button.buttonContents}>
                     {(glyph) && 

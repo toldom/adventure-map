@@ -10,14 +10,16 @@ import { firaSans, firaSansSm, dancingScript } from "@/styles/fonts";
 interface HeaderProps {
     mainLine?: string,
     subLine?: string,
-    hasSearch?: boolean
+    hasSearch?: boolean,
+    searchTerm?: string,
+    setSearchTerm?: React.Dispatch<React.SetStateAction<string>>
 }
 
 const envMetadata = config.envMetadata;
 
 export default function Header(props: HeaderProps) {
 
-    const { mainLine, subLine, hasSearch = false } = props;
+    const { mainLine, subLine, hasSearch = false , searchTerm, setSearchTerm} = props;
 
     return (
         <div className={ header.main }>
@@ -26,7 +28,7 @@ export default function Header(props: HeaderProps) {
                     <Image src={envMetadata.logo} className={ header.tamLogo } alt="Tofino Adventure Map Logo" width="90" height="132" />
                 </Link>
                 { (hasSearch) && 
-                    <input className={ firaSansSm.className } type="text" placeholder="Search by business or keyword" />
+                    <input className={ firaSansSm.className } type="text" value={searchTerm ?? ""} onChange={e => props.setSearchTerm && props.setSearchTerm(e.target.value)} placeholder="Search by business or keyword" />
                 }
                 <div className={ header.navBar }>
                     <Link className={ `${header.navLink} ${firaSansSm.className}` } href={"/town-map"} >{ envMetadata.mapSideAName.toUpperCase() } MAP</Link>

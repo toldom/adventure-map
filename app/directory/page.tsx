@@ -15,13 +15,15 @@ export default function Directory() {
 	const defaultFilter = "default"
 	const [activeFilter, setActiveFilter] = useState(defaultFilter);
 	const defaultFilterActive = activeFilter == defaultFilter;
+	const [searchTerm, setSearchTerm] = useState("");
 
 	const businessCards: JSX.Element[] = [];
 
 	BusinessData.forEach(business => {
 
 		const categoryMatchesActiveFilter 	= business.category === activeFilter;
-		const showBusiness 					= defaultFilterActive || categoryMatchesActiveFilter;
+		const matchesSearchTerm 			= business.name.toLowerCase().includes(searchTerm.toLowerCase()) || business.description?.toLowerCase().includes(searchTerm.toLowerCase());
+		const showBusiness 					= (defaultFilterActive || categoryMatchesActiveFilter) && matchesSearchTerm;
 
 		if (showBusiness) {
 			businessCards.push(
@@ -32,7 +34,7 @@ export default function Directory() {
 
 	return (
 		<div>
-			<Header hasSearch={ true } />
+			<Header hasSearch={ true } searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 			<main className={directoryPage.directoryPage}>
 				{/* Filter sidebar */}
 				<div className={directoryPage.filteringSection}>
